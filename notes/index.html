@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps − Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="back" href="../index.html">Back</a>
+    <div class="container">
+        <h1 class="title">Notes</h1>
+        <div class="wrapper">
+            <div class="group">
+                <button id="list-button">List</button>
+                <button id="new-note-button">New note</button>
+            </div>
+            <div id="list" class="section">
+            </div>
+            <div id="new-note" class="section">
+                <input id="new-note-title" class="note-title" autocomplete="off" spellcheck="false" placeholder="Title">
+                <textarea id="new-note-content" class="note-content" name="" id="" cols="30" rows="10" resize="none" spellcheck="false" placeholder="Content"></textarea>
+                <button id="add-note-button">Add</button>
+            </div>
+            <div id="view-note" class="section">
+                <input id="view-note-title" class="note-title" autocomplete="off" spellcheck="false" placeholder="Title" readonly="true">
+                <textarea id="view-note-content" class="note-content" name="" id="" cols="30" rows="10" resize="none" spellcheck="false" readonly="true"></textarea>
+                <div class="group">
+                    <button id="close-note-button" class="button">Close</button>
+                    <button id="edit-note-button" class="button">Edit</button>
+                    <button id="delete-note-button" class="button">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
