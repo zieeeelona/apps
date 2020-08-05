@@ -1,0 +1,103 @@
+body {
+    height: calc(100vh - 16px);
+    background: #4C91F6;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    width: 100px;
+    height: 50px;
+    background: #FFF;
+    color: #000;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    height: 50px;
+    width: 30%;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #FFF;
+    background: #4C91F6;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    outline: 0;
+    border: 0;
+}
+
+input {
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px 0 0 0;
+    background: #DDD;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    height: 360px;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    resize: none;
+}
+
+.line {
+    width: 300px;
+    height: 10px;
+    margin: 20px 0 20px 0;
+    border-radius: 5px;
+    background: #DDD;
+}
+
+#value {
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    background: none;
+}
+
+.tick {
+    line-height: 0px;
+    color: #999;
+}
+
+@media all and (min-width: 512px) {
+    .container {
+        width: 500px;
+    }
+}
