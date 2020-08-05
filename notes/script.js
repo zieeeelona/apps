@@ -152,8 +152,17 @@ function deleteNote() {
 }
 
 function loadArray() {
-    titleArray = JSON.parse(localStorage.getItem("titleArray"));
-    contentArray = JSON.parse(localStorage.getItem("contentArray"));
+    if (localStorage.getItem("titleArray") != "null") {
+        titleArray = JSON.parse(localStorage.getItem("titleArray"));   
+    } else {
+        localStorage.setItem("titleArray", "[]");
+    }
+    
+    if (localStorage.getItem("contentArray") != "null") {
+        contentArray = JSON.parse(localStorage.getItem("contentArray"));   
+    } else {
+        localStorage.setItem("titleArray", "[]");
+    }
 }
 
 function uploadArray() {
