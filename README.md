@@ -7,6 +7,7 @@ Hello! ✋ I made this repository to store my all small applications written in 
 - 🖥️ Binary to Decimal Converter
 - ⏱️ Stopwatch
 - 📝 Notes
+- 🔑 Password Strength Calculator
 
 ## Live
 
